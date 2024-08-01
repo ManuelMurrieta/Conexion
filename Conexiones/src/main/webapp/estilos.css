@@ -1,0 +1,245 @@
+/* Establece el fondo de la imagen y la fuente */
+body {
+	background: url('fondo.png') no-repeat center center fixed;
+	background-size: cover;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	color: #333;
+}
+
+/* Contenedor principal */
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Encabezados */
+h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+/* Estilos de los paneles */
+.panel-imagen {
+	display: inline-block;
+	/* Cambiado a "inline-block" para que estén en una sola fila */
+	width: 20%;
+	/* Ajusta el ancho para que haya espacio para las 5 imágenes */
+	padding: 10px;
+	/* Agrega espacio entre las imágenes */
+	text-align: center;
+	/* Centra el contenido horizontalmente */
+}
+
+.panel-imagen img {
+	max-width: 90%;
+	max-height: 0%;
+}
+
+.panel-imagen img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.panel-header {
+	background-color: rgba(0, 123, 255, 0.8);
+	color: #fff;
+	padding: 15px;
+	font-weight: bold;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.panel-content {
+	color: #555;
+	margin-top: 15px;
+}
+
+/* Estilos de campos de entrada */
+.input-label {
+	font-weight: bold;
+	color: #555;
+	margin-bottom: 5px;
+}
+
+.input-field {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+/* Estilos de los botones */
+.btn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary {
+	background-color: #007bff;
+	color: #fff;
+}
+
+.btn-primary:hover {
+	background-color: #0056b3;
+}
+
+.btn-secondary {
+	background-color: #6c757d;
+	color: #fff;
+}
+
+.btn-secondary:hover {
+	background-color: #545b62;
+}
+
+/* Efecto de resaltado en campos de entrada */
+.input-field:focus {
+	box-shadow: 0 0 5px #007bff;
+}
+
+/* Estilos de la tabla */
+.p-datatable {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.p-datatable thead th {
+	background-color: #f0f0f0;
+	font-weight: bold;
+	padding: 10px;
+	text-align: left;
+	border-bottom: 2px solid #ccc;
+}
+
+.p-datatable tbody td {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+/* Estilos de los panelGrid dentro de los paneles */
+.panel .ui-panelgrid {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+	padding: 0;
+}
+
+.hidden-panels {
+	display: none;
+}
+
+/* Paneles Cliente y Vehículo */
+.panel-cliente,
+.panel-vehiculo {
+	max-width: 50%;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+/* Panel de Resultados */
+.panel-resultados {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+	max-width: 33%;
+	/* Reducido al tercio del tamaño */
+}
+
+
+.btn-with-image {
+	background-image: url('fondo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 40px;
+	/* Espacio para la imagen a la izquierda del texto */
+}
+
+.panel-inicio {
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 30%;
+	/* Ancho del panel de inicio */
+}
+
+.panel {
+	background-color: rgba(255, 255, 255, 0.6);
+	/* Cambia el valor alfa para controlar la transparencia */
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* Agrega el estilo para el panel de inicio */
+.panel-inicio {
+	background-color: transparent;
+	/* Fondo transparente */
+	border: none;
+	/* Borde sin estilo */
+	padding: 0;
+	/* Espaciado interno cero */
+}
+
+/* Estilo para hacer que el título del panel tenga un fondo semitransparente */
+.ui-panel-titlebar {
+	background-color: rgba(255, 255, 255, 0.7);
+	/* Fondo blanco semitransparente */
+	border: none;
+	/* Borde sin estilo */
+	padding: 10px;
+	/* Espaciado interno */
+	margin: 0;
+	/* Margen cero */
+	border-radius: 0;
+	/* Bordes redondeados cero */
+}
+
+/* Estilo para hacer que el título del panel sea transparente */
+.ui-panel-title {
+	background-color: transparent;
+	/* Fondo transparente */
+	font-size: 20px;
+	/* Tamaño de fuente */
+	color: #333;
+	/* Color de fuente */
+}
+
+/* Estilo para hacer que el encabezado del panel sea transparente */
+.ui-panel-content {
+	background-color: transparent;
+	/* Fondo transparente */
+	border: none;
+	/* Borde sin estilo */
+	padding: 0;
+	/* Espaciado interno cero */
+}
+
+/* Estilo para los bordes de las imágenes en el panel */
+.panel-imagen-horizontal {
+	border: 1px solid #ccc;
+	/* Borde delgado */
+	margin: 20px;
+	/* Margen exterior */
+	padding: 10px;
+	/* Espaciado interno */
+	background-color: #fff;
+	/* Fondo blanco */
+}
